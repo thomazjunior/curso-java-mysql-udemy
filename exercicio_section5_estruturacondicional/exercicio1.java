@@ -17,5 +17,7 @@ public class exercicio1 {
 			System.out.println("Este numero é nulo");
 		}
 	}
+	
+	
 
 }
