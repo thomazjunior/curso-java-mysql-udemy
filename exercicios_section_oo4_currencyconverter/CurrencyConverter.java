@@ -1,27 +1,14 @@
 package exercicios_section_oo4_currencyconverter;
 
 import java.text.DecimalFormat;
-import java.util.Scanner;
 
 public class CurrencyConverter {
-	public static void main(String[] args) {
 
-		double amount, dollar, pound, code, euro, yen, ringgit, rupee;
+	double amount, dollar, pound, code, euro, yen, ringgit, rupee;
 
-		DecimalFormat f = new DecimalFormat("##.#####");
+	DecimalFormat f = new DecimalFormat("##.##");
 
-		Scanner sc = new Scanner(System.in);
-
-		System.out.println("hi, Welcome to the Currency Converter!");
-
-		System.out.println("which currency You want to Convert ? ");
-
-		System.out.println("1:Ruppe \t2:Dollar \t3:Pound \n4:Euro \t5:Yen \t6:Ringgit ");
-		code = sc.nextInt();
-
-		System.out.println("How much Money you want to convert ?");
-		amount = sc.nextFloat();
-
+	public void converter() {
 		// For amounts Conversion
 		if (code == 1) {
 
@@ -129,7 +116,5 @@ public class CurrencyConverter {
 			System.out.println("Invalid input");
 		}
 
-		System.out.println("Thank you for choosing our Example Programs");
 	}
-
 }

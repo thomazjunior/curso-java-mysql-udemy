@@ -23,6 +23,5 @@ public class ProgramEmployee {
 		System.out.println();
 		System.out.println("Updated data: " + emp);
 		sc.close();
-		Locale.
 	}
 }
