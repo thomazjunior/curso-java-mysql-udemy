@@ -4,28 +4,24 @@ import java.text.DecimalFormat;
 
 public class CurrencyConverter {
 
-	double amount, dollar, pound, code, euro, yen, ringgit, rupee;
+	static double code, amount;
+	static double dollar, pound, euro, yen, ringgit, rupee;
 
-	DecimalFormat f = new DecimalFormat("##.##");
+	static DecimalFormat f = new DecimalFormat("##.##");
 
-	public void converter() {
+	public static void converter() {
 		// For amounts Conversion
 		if (code == 1) {
 
-			dollar = amount / 70;
-			System.out.println("Your " + amount + " Rupee is : " + f.format(dollar) + " Dollar");
+			System.out.println("Your " + amount + " Rupee is : " + f.format((amount / 70)) + " Dollar");
 
-			pound = amount / 88;
-			System.out.println("Your " + amount + " Rupee is : " + f.format(pound) + " Pound");
+			System.out.println("Your " + amount + " Rupee is : " + f.format((amount / 88)) + " Pound");
 
-			euro = amount / 80;
-			System.out.println("Your " + amount + " Rupee is : " + f.format(euro) + " Euro");
+			System.out.println("Your " + amount + " Rupee is : " + f.format((amount / 80)) + " Euro");
 
-			yen = amount / 0.63;
-			System.out.println("Your " + amount + " Rupee is : " + f.format(yen) + " Yen");
+			System.out.println("Your " + amount + " Rupee is : " + f.format(yen = amount / 0.63) + " Yen");
 
-			ringgit = amount / 16;
-			System.out.println("Your " + amount + " Rupee is : " + f.format(ringgit) + " ringgit");
+			System.out.println("Your " + amount + " Rupee is : " + f.format(amount / 16) + " ringgit");
 		} else if (code == 2) {
 			// For Dollar Conversion
 
