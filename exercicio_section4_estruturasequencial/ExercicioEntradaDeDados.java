@@ -89,6 +89,7 @@ public class ExercicioEntradaDeDados {
 		System.out.println("NUMBER: " + numFunc);
 		System.out.println(valSal);
 		System.out.printf("SALARY = U$ %f", valSal);
+		
 	}
 	
 	public static void exercicio5() {
